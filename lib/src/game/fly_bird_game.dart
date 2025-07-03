@@ -49,7 +49,7 @@ class FlyBirdGame extends FlameGame<FlyBirdWorld>
       gameControlBloc.add(
         GameControlStatusChangedEvent(status: GameStatus.playing),
       );
-    } else {
+    } else if (gameControlBloc.state.status == GameStatus.playing) {
       dashControlBloc.add(DashJumpEvent());
     }
   }

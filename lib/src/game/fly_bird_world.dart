@@ -15,7 +15,7 @@ class FlyBirdWorld extends World {
 
   @override
   FutureOr<void> onLoad() async {
-    debugMode = true;
+    //debugMode = true;
     await add(
       FlameMultiBlocProvider(
         providers: [
